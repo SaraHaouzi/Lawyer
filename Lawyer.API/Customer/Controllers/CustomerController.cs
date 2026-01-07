@@ -4,6 +4,7 @@ using System.Net.Security;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
+
 namespace Customer.Controllers
 {
     [Route("api/[controller]")]
@@ -50,7 +51,7 @@ namespace Customer.Controllers
                 return BadRequest();
             cPut.Id = c.Id;
             cPut.Name = c.Name;
-            cPut.CustomerCaseNumber = c.CustomerCaseNumber;
+            cPut.Age = c.Age;
             return NoContent();
         }
 
